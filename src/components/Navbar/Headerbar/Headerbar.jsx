@@ -19,12 +19,12 @@ const Headerbar = () => {
         <Searchbar />
       </SearchWrapper>
       <LoginWrapper>
-        <Text size={'14px'} weight={'400'}>
+        <Text size={'14px'} weight={'400'} color={'green'}>
           SIGN IN
           &nbsp;
-          <Span color={'red'} size={'14px'} weight={'400'}>| </Span>
+          <Span color={'grey'} size={'14px'} weight={'400'}>| </Span>
           &nbsp;
-          <Span color={'green'} size={'14px'} weight={'400'}>SIGN UP</Span>
+          <Span color={'black'} size={'14px'} weight={'400'}>SIGN UP</Span>
         </Text>
       </LoginWrapper>
     </HeaderbarWrapper>

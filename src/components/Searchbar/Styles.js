@@ -18,9 +18,17 @@ export const IconWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
   padding: 9px;
+  cursor: pointer;
 `;
 
 export const Input = styled.input`
   border: none;
   width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+  ::placeholder {
+    color: grey;
+  }
 `;
