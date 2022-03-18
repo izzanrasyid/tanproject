@@ -1,8 +1,9 @@
 import React from "react";
 import LandingSection from "./LandingSection";
 import Pros from "./Pros";
-import Footer from "../../components/Footer";
 import Feature from "./Feature";
+import Video from "./Video";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <LandingSection />
       <Pros />
       <Feature />
+      <Video />
       <Footer />
     </>
   );

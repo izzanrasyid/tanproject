@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Text from "../../../components/Text/Span";
-import { IconArrow } from "../../../components/Icons";
 
 const CardContainer = styled.div`
   max-width: 20%;
