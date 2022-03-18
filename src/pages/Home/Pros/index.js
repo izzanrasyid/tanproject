@@ -11,7 +11,6 @@ const Container = styled.div`
   display: flex;
   padding: 0 5%;
   flex-direction: column;
-  margin-bottom: 2.5%;
 `;
 
 const Title = styled.div`
@@ -54,9 +53,7 @@ const Pros = () => {
         <Text size={'44px'} weight={'700'}>Keunggulan TAN Studies</Text>
       </Title>
       <Contents>
-        {
-          contents.map(content => <Card image={content.image} title={content.title}/>)
-        }
+        { contents.map((content, id) => <Card image={content.image} title={content.title} key={id}/>) }
       </Contents>
     </Container>
   );

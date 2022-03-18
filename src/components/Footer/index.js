@@ -53,7 +53,7 @@ const Footer = () => {
         <Text size={'20px'} weight={"600"} color={"#FFF"}>Supported by</Text>
       </Title>
       <Cards>
-        { sponsors.map((sponsor) => (<Card>{sponsor}</Card>)) }
+        { sponsors.map((sponsor, id) => <Card key={id}>{sponsor}</Card>) }
       </Cards>
       <CardsMenu>
         <Address />
