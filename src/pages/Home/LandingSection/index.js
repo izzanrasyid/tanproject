@@ -3,7 +3,6 @@ import styled from "styled-components";
 import bg from "../../../public/Fill.png";
 import JS from "../../../public/JS.png"
 import Text from "../../../components/Text/Span";
-// import Button from "../../../components/Button";
 
 const Container = styled.div`
   background-image: url(${bg});
