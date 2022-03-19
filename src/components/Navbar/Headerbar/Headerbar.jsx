@@ -9,7 +9,11 @@ import {
   LoginWrapper
 } from './styles';
 
-const Headerbar = () => {
+const Headerbar = ({setIsLogin}) => {
+  const toLogin = () => {
+    return setIsLogin(true);
+  };
+
   return (
     <HeaderbarWrapper>
       <LogoWrapper>
@@ -18,7 +22,7 @@ const Headerbar = () => {
       <SearchWrapper>
         <Searchbar />
       </SearchWrapper>
-      <LoginWrapper>
+      <LoginWrapper onClick={toLogin}>
         <Text size={'14px'} weight={'400'} color={'green'}>
           SIGN IN
           &nbsp;

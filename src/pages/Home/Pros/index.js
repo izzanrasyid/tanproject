@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Text from "../../../components/Text/Span";
 import Card from "./Card";
-import { contents } from "./constant";
+import { contents } from "./constant"
 
 const Container = styled.div`
   display: flex;

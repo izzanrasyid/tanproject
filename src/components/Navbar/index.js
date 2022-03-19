@@ -3,10 +3,10 @@ import { NavbarContainer } from './styles';
 import Headerbar from './Headerbar/Headerbar';
 import Menu from './Menu/Menu';
 
-const Navbar = () => {
+const Navbar = ({setIsLogin}) => {
   return (
     <NavbarContainer>
-      <Headerbar />
+      <Headerbar setIsLogin={setIsLogin} />
       <Menu />
     </NavbarContainer>
   );

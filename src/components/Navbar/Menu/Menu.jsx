@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Text } from '../../Text';
 import { IconHamburger } from '../../Icons';
+import { Link } from "react-router-dom";
 import {
   Container,
   MenuContainer,
@@ -10,6 +11,7 @@ import {
   MenuWrapper,
   MenuLink
 } from './styles';
+import { linkStyle } from './constant';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +28,10 @@ const Menu = () => {
       </HamburgerWrapper>
       <MenuContainer isOpen={isOpen}>
         <MenuWrapper>
-          <MenuLink href="">HOME</MenuLink>
+          <Link to="/" style={linkStyle}>HOME</Link>
           <MenuLink href="">TENTANG KAMI</MenuLink>
-          <MenuLink href="">PRODUK KAMI</MenuLink>
-          <MenuLink href="">E-STORE</MenuLink>
+          <Link to="/products" style={linkStyle}>PRODUK KAMI</Link>
+          <Link to="/store" style={linkStyle}>E-STORE</Link>
           <MenuLink href="">JADWAL BIMBEL OFFLINE</MenuLink>
           <MenuLink href="">BLOG</MenuLink>
           <MenuLink href="">FAQ</MenuLink>

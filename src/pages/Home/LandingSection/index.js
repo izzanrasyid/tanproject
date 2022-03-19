@@ -25,8 +25,7 @@ const Content = styled.div`
 `;
 
 const ContentLeft = styled.div`
-  background-color: #FFF;
-  opacity: 80%;
+  background: rgba(255, 255, 255, 0.8);
   flex: 1;
   display: flex;
   flex-direction: column;

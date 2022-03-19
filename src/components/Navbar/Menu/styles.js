@@ -10,7 +10,6 @@ export const Container = styled.div`
 export const MenuContainer = styled.div`
   display: flex;
   justify-content: center;
-  position: relative;
   @media (max-width: 768px) {
     display: ${({ isOpen }) => (!isOpen ? 'none' : null)}
   }
@@ -60,8 +59,4 @@ export const MenuLink = styled.a`
   font-size: 0.9rem;
   color: #000;
   transition: all 0.3s ease-in;
-
-  &:hover {
-    color: #4CAF50;
-  }
 `;

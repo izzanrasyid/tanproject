@@ -1,8 +1,11 @@
 import React from "react";
+import Posters from "./Posters";
 
 const OnlineStore = () => {
   return (
-    <h1>OnlineStore</h1>
+    <>
+      <Posters />
+    </>
   );
 };
 

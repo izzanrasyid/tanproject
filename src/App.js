@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from 'styled-components';
 import {
   BrowserRouter as Router,
@@ -17,12 +17,16 @@ const Appl = styled.div`
 `;
 
 const App = () => {
+  const [isLogin, setIsLogin] = useState(false);
+
   return (
     <Appl>
+      {
+        isLogin && (<Login/>)
+      }
       <Router>
-        <Navbar />
+        <Navbar setIsLogin={setIsLogin} />
         <Routes>
-          <Route path="/login" element={<Login />}/>
           <Route path="/products" element={<Products />}/>
           <Route path="/store" element={<OnlineStore />}/>
           <Route path="/" element={<Home />}/>
