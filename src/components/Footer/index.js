@@ -8,6 +8,7 @@ import SocialMedia from "./SocialMedia";
 import Copyright from "./Copyright";
 import Contacts from "./Contacts";
 import Download from "./Download";
+import { sponsors } from "./constant";
 
 const Container = styled.div`
   display: flex;
@@ -45,8 +46,6 @@ const CardsMenu = styled.div`
 `;
 
 const Footer = () => {
-  const sponsors = ['Sponsor 1','Sponsor 2','Sponsor 3','Sponsor 4','Sponsor 5']
-
   return (
     <Container>
       <Title>

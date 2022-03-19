@@ -3,7 +3,6 @@ import LandingSection from "./LandingSection";
 import Pros from "./Pros";
 import Feature from "./Feature";
 import Video from "./Video";
-import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <Pros />
       <Feature />
       <Video />
-      <Footer />
     </>
   );
 };

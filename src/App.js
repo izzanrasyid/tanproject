@@ -1,7 +1,16 @@
 import React from "react";
-import Navbar from './components/Navbar';
 import styled from 'styled-components';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from './pages/Home';
+import Login from './pages/Login';
+import Products from './pages/Products';
+import OnlineStore from './pages/OnlineStore';
+import Footer from "./components/Footer";
 
 const Appl = styled.div`
   height: 100vh;
@@ -10,8 +19,16 @@ const Appl = styled.div`
 const App = () => {
   return (
     <Appl>
-      <Navbar />
-      <Home />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/products" element={<Products />}/>
+          <Route path="/store" element={<OnlineStore />}/>
+          <Route path="/" element={<Home />}/>
+        </Routes>
+        <Footer />
+      </Router>
     </Appl>
   );
 };

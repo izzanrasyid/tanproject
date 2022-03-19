@@ -2,10 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Text from "../../../components/Text/Span";
 import Card from "./Card";
-import pengajar from "../../../public/pengajar.png";
-import soal from "../../../public/soal.png";
-import belajar from "../../../public/belajar.png";
-
+import { contents } from "./constant";
 
 const Container = styled.div`
   display: flex;
@@ -32,21 +29,6 @@ const Contents = styled.div`
 `;
 
 const Pros = () => {
-  const contents = [
-    {
-      title: 'Pengajar Ahli & Seru',
-      image: pengajar,
-    },
-    {
-      title: 'Soal - Soal Asli dan Terjamin',
-      image: soal,
-    },
-    {
-      title: 'Belajar Intensif',
-      image: belajar,
-    },
-  ];
-
   return (
     <Container>
       <Title>
