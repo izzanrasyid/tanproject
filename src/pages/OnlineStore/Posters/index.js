@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import pic1 from '../../../public/Shop/posterpict1.png';
 import pic2 from '../../../public/Shop/posterpict2.png';
 import Banner from './Banner';
+import { Text } from '../../../components/Text';
+import Product from "./Product";
 
 const Container = styled.div`
   display: flex;
@@ -17,7 +19,6 @@ const LeftPoster = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
   background: #FAFAFA;
   box-shadow: -0.2px 3px 16px #EAEAEA;
   border-radius: 3px;
@@ -32,11 +33,28 @@ const RightPoster = styled.div`
   padding-left: 1.25%;
 `;
 
+const TitleWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const PosterTitle = styled.div`
+  padding: 5%;
+  align-items: center;
+  width: 100%;
+`;
+
 const Posters = () => {
   return (
     <Container>
       <LeftPoster>
-        <h1>Poster Kiri</h1>
+        <PosterTitle>
+          <TitleWrapper>
+            <Text size={'24px'} weight={'800'}>REKOMENDASI BUKU PALING LARIS</Text>
+          </TitleWrapper>
+          <Product />
+        </PosterTitle>
       </LeftPoster>
       <RightPoster>
         <Banner color={'rgba(76, 175, 80, 0.8)'} shadow={'-0.2px 3px 16px #EAEAEA'} image={pic1} />

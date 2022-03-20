@@ -6,7 +6,7 @@ import {
   IconTwitter,
   IconGPlus,
   IconYoutube,
-  IconPinterest
+  IconPinterest,
 } from "../../Icons";
 
 const Container = styled.div`
