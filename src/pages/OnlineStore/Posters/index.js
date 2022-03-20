@@ -1,49 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
 import pic1 from '../../../public/Shop/posterpict1.png';
 import pic2 from '../../../public/Shop/posterpict2.png';
 import Banner from './Banner';
 import { Text } from '../../../components/Text';
 import Product from "./Product";
-
-const Container = styled.div`
-  display: flex;
-  padding: 5%;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const LeftPoster = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  background: #FAFAFA;
-  box-shadow: -0.2px 3px 16px #EAEAEA;
-  border-radius: 3px;
-  padding-right: 1.25%;
-`;
-
-const RightPoster = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 1.25%;
-`;
-
-const TitleWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const PosterTitle = styled.div`
-  padding: 5%;
-  align-items: center;
-  width: 100%;
-`;
+import {
+  Container,
+  LeftPoster,
+  RightPoster,
+  TitleWrapper,
+  PosterTitle
+} from './styles';
 
 const Posters = () => {
   return (

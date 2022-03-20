@@ -1,35 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Text } from '../../../../components/Text';
 import Searchbar from '../../../../components/Searchbar';
 import Product from './Product';
 import { productList } from '../../constant';
-
-const Container = styled.div`
-  flex: 9;
-  padding: 0 5% 5% 5%;
-
-  @media (max-width: 768px) {
-    flex: 1;
-  }
-`;
-
-const SearchbarWrapper = styled.div`
-  margin: 2% 0;
-  background: #FFF;
-  border-radius: 3px;
-`;
-
-const ProductsWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
+import { Container, SearchbarWrapper, ProductsWrapper } from './styles';
 
 const Products = () => {
   return (

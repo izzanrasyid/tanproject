@@ -1,25 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
 import Checkbox from '../../../../components/Checkbox';
+import Dropdown from '../../../../components/Dropdown';
 import { jenjangList, kelasList, programList, pelajaranList } from '../../constant';
-
-const Container = styled.div`
-  flex: 3;
-  padding: 0 5% 5% 5%;
-
-  @media (max-width: 768px) {
-    flex: 1;
-  }
-`;
-
-const CheckboxWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
+import { Container, CheckboxWrapper, DropdownWrapper } from './styles';
 
 const Filter = () => {
   return (
@@ -30,6 +13,12 @@ const Filter = () => {
         <Checkbox checklist={programList} title={'Program'} />
         <Checkbox checklist={pelajaranList} title={'Mata Pelajaran'} />
       </CheckboxWrapper>
+      <DropdownWrapper>
+        <Dropdown title={'Jenjang'} list={jenjangList} />
+        <Dropdown title={'Kelas'} list={kelasList} />
+        <Dropdown title={'Program'} list={programList} />
+        <Dropdown title={'Mata Pelajaran'} list={pelajaranList} />
+      </DropdownWrapper>
     </Container>
   );
 };
