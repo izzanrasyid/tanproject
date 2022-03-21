@@ -13,7 +13,6 @@ const Container = styled.div`
 `;
 
 const NoCard = ({contents}) => {
-  console.log(contents, '<<<<');
   return (
     <Container>
       {

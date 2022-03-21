@@ -16,6 +16,11 @@ import { linkStyle } from './constant';
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const closeNavbar = () => {
+    console.log('tes');
+    setIsOpen(false);
+  };
+
   return (
     <Container>
       <HamburgerWrapper>
@@ -28,10 +33,10 @@ const Menu = () => {
       </HamburgerWrapper>
       <MenuContainer isOpen={isOpen}>
         <MenuWrapper>
-          <Link to="/" style={linkStyle}>HOME</Link>
+          <Link to="/" style={linkStyle} onClick={closeNavbar}>HOME</Link>
           <MenuLink href="">TENTANG KAMI</MenuLink>
-          <Link to="/products" style={linkStyle}>PRODUK KAMI</Link>
-          <Link to="/store" style={linkStyle}>E-STORE</Link>
+          <Link to="/products" style={linkStyle} onClick={closeNavbar}>PRODUK KAMI</Link>
+          <Link to="/store" style={linkStyle} onClick={closeNavbar}>E-STORE</Link>
           <MenuLink href="">JADWAL BIMBEL OFFLINE</MenuLink>
           <MenuLink href="">BLOG</MenuLink>
           <MenuLink href="">FAQ</MenuLink>

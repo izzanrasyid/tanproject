@@ -17,7 +17,6 @@ const Container = styled.div`
 `;
 
 const WithCard = ({contents}) => {
-  console.log(contents, '<<<<');
   return (
     <Container>
       {
