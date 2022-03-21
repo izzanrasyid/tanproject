@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Text from "../../../components/Text/Span";
+import {
+  PictureWrapper,
+  Picture,
+  Content,
+  TextWrapper
+} from '../styles';
 
 const Container = styled.div`
   display: flex;
@@ -8,32 +14,6 @@ const Container = styled.div`
   justify-content: center;
   margin: 0 5%;
   padding: 2%;
-`;
-
-const PictureWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const Picture = styled.div`
-  background-image: ${({ img }) => `url(${img})`};
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 235px;
-  width: 345px;
-`;
-
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 2% 0;
-`;
-
-const TextWrapper = styled.div`
-  padding: 2% 0;
-  display: flex;
-  justify-content: center;
 `;
 
 const Product = ({img, title}) => {
